@@ -1,0 +1,356 @@
+[
+{
+  "directory": "/home/hhh/git/recastnavigation/DebugUtils",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include  -o CMakeFiles/DebugUtils.dir/Source/DebugDraw.cpp.o -c /home/hhh/git/recastnavigation/DebugUtils/Source/DebugDraw.cpp",
+  "file": "/home/hhh/git/recastnavigation/DebugUtils/Source/DebugDraw.cpp",
+  "output": "DebugUtils/CMakeFiles/DebugUtils.dir/Source/DebugDraw.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DebugUtils",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include  -o CMakeFiles/DebugUtils.dir/Source/DetourDebugDraw.cpp.o -c /home/hhh/git/recastnavigation/DebugUtils/Source/DetourDebugDraw.cpp",
+  "file": "/home/hhh/git/recastnavigation/DebugUtils/Source/DetourDebugDraw.cpp",
+  "output": "DebugUtils/CMakeFiles/DebugUtils.dir/Source/DetourDebugDraw.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DebugUtils",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include  -o CMakeFiles/DebugUtils.dir/Source/RecastDebugDraw.cpp.o -c /home/hhh/git/recastnavigation/DebugUtils/Source/RecastDebugDraw.cpp",
+  "file": "/home/hhh/git/recastnavigation/DebugUtils/Source/RecastDebugDraw.cpp",
+  "output": "DebugUtils/CMakeFiles/DebugUtils.dir/Source/RecastDebugDraw.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DebugUtils",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include  -o CMakeFiles/DebugUtils.dir/Source/RecastDump.cpp.o -c /home/hhh/git/recastnavigation/DebugUtils/Source/RecastDump.cpp",
+  "file": "/home/hhh/git/recastnavigation/DebugUtils/Source/RecastDump.cpp",
+  "output": "DebugUtils/CMakeFiles/DebugUtils.dir/Source/RecastDump.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Detour",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/Detour.dir/Source/DetourAlloc.cpp.o -c /home/hhh/git/recastnavigation/Detour/Source/DetourAlloc.cpp",
+  "file": "/home/hhh/git/recastnavigation/Detour/Source/DetourAlloc.cpp",
+  "output": "Detour/CMakeFiles/Detour.dir/Source/DetourAlloc.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Detour",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/Detour.dir/Source/DetourAssert.cpp.o -c /home/hhh/git/recastnavigation/Detour/Source/DetourAssert.cpp",
+  "file": "/home/hhh/git/recastnavigation/Detour/Source/DetourAssert.cpp",
+  "output": "Detour/CMakeFiles/Detour.dir/Source/DetourAssert.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Detour",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/Detour.dir/Source/DetourCommon.cpp.o -c /home/hhh/git/recastnavigation/Detour/Source/DetourCommon.cpp",
+  "file": "/home/hhh/git/recastnavigation/Detour/Source/DetourCommon.cpp",
+  "output": "Detour/CMakeFiles/Detour.dir/Source/DetourCommon.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Detour",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/Detour.dir/Source/DetourNavMesh.cpp.o -c /home/hhh/git/recastnavigation/Detour/Source/DetourNavMesh.cpp",
+  "file": "/home/hhh/git/recastnavigation/Detour/Source/DetourNavMesh.cpp",
+  "output": "Detour/CMakeFiles/Detour.dir/Source/DetourNavMesh.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Detour",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/Detour.dir/Source/DetourNavMeshBuilder.cpp.o -c /home/hhh/git/recastnavigation/Detour/Source/DetourNavMeshBuilder.cpp",
+  "file": "/home/hhh/git/recastnavigation/Detour/Source/DetourNavMeshBuilder.cpp",
+  "output": "Detour/CMakeFiles/Detour.dir/Source/DetourNavMeshBuilder.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Detour",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/Detour.dir/Source/DetourNavMeshQuery.cpp.o -c /home/hhh/git/recastnavigation/Detour/Source/DetourNavMeshQuery.cpp",
+  "file": "/home/hhh/git/recastnavigation/Detour/Source/DetourNavMeshQuery.cpp",
+  "output": "Detour/CMakeFiles/Detour.dir/Source/DetourNavMeshQuery.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Detour",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/Detour.dir/Source/DetourNode.cpp.o -c /home/hhh/git/recastnavigation/Detour/Source/DetourNode.cpp",
+  "file": "/home/hhh/git/recastnavigation/Detour/Source/DetourNode.cpp",
+  "output": "Detour/CMakeFiles/Detour.dir/Source/DetourNode.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DetourCrowd",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DetourCrowd/Include -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/DetourCrowd.dir/Source/DetourCrowd.cpp.o -c /home/hhh/git/recastnavigation/DetourCrowd/Source/DetourCrowd.cpp",
+  "file": "/home/hhh/git/recastnavigation/DetourCrowd/Source/DetourCrowd.cpp",
+  "output": "DetourCrowd/CMakeFiles/DetourCrowd.dir/Source/DetourCrowd.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DetourCrowd",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DetourCrowd/Include -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/DetourCrowd.dir/Source/DetourLocalBoundary.cpp.o -c /home/hhh/git/recastnavigation/DetourCrowd/Source/DetourLocalBoundary.cpp",
+  "file": "/home/hhh/git/recastnavigation/DetourCrowd/Source/DetourLocalBoundary.cpp",
+  "output": "DetourCrowd/CMakeFiles/DetourCrowd.dir/Source/DetourLocalBoundary.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DetourCrowd",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DetourCrowd/Include -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/DetourCrowd.dir/Source/DetourObstacleAvoidance.cpp.o -c /home/hhh/git/recastnavigation/DetourCrowd/Source/DetourObstacleAvoidance.cpp",
+  "file": "/home/hhh/git/recastnavigation/DetourCrowd/Source/DetourObstacleAvoidance.cpp",
+  "output": "DetourCrowd/CMakeFiles/DetourCrowd.dir/Source/DetourObstacleAvoidance.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DetourCrowd",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DetourCrowd/Include -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/DetourCrowd.dir/Source/DetourPathCorridor.cpp.o -c /home/hhh/git/recastnavigation/DetourCrowd/Source/DetourPathCorridor.cpp",
+  "file": "/home/hhh/git/recastnavigation/DetourCrowd/Source/DetourPathCorridor.cpp",
+  "output": "DetourCrowd/CMakeFiles/DetourCrowd.dir/Source/DetourPathCorridor.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DetourCrowd",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DetourCrowd/Include -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/DetourCrowd.dir/Source/DetourPathQueue.cpp.o -c /home/hhh/git/recastnavigation/DetourCrowd/Source/DetourPathQueue.cpp",
+  "file": "/home/hhh/git/recastnavigation/DetourCrowd/Source/DetourPathQueue.cpp",
+  "output": "DetourCrowd/CMakeFiles/DetourCrowd.dir/Source/DetourPathQueue.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DetourCrowd",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DetourCrowd/Include -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/DetourCrowd.dir/Source/DetourProximityGrid.cpp.o -c /home/hhh/git/recastnavigation/DetourCrowd/Source/DetourProximityGrid.cpp",
+  "file": "/home/hhh/git/recastnavigation/DetourCrowd/Source/DetourProximityGrid.cpp",
+  "output": "DetourCrowd/CMakeFiles/DetourCrowd.dir/Source/DetourProximityGrid.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DetourTileCache",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/DetourTileCache.dir/Source/DetourTileCache.cpp.o -c /home/hhh/git/recastnavigation/DetourTileCache/Source/DetourTileCache.cpp",
+  "file": "/home/hhh/git/recastnavigation/DetourTileCache/Source/DetourTileCache.cpp",
+  "output": "DetourTileCache/CMakeFiles/DetourTileCache.dir/Source/DetourTileCache.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/DetourTileCache",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/Detour/Include  -o CMakeFiles/DetourTileCache.dir/Source/DetourTileCacheBuilder.cpp.o -c /home/hhh/git/recastnavigation/DetourTileCache/Source/DetourTileCacheBuilder.cpp",
+  "file": "/home/hhh/git/recastnavigation/DetourTileCache/Source/DetourTileCacheBuilder.cpp",
+  "output": "DetourTileCache/CMakeFiles/DetourTileCache.dir/Source/DetourTileCacheBuilder.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/Recast.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/Recast.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/Recast.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/Recast.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastAlloc.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastAlloc.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastAlloc.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastAlloc.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastArea.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastArea.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastArea.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastArea.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastAssert.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastAssert.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastAssert.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastAssert.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastContour.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastContour.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastContour.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastContour.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastFilter.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastFilter.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastFilter.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastFilter.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastLayers.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastLayers.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastLayers.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastLayers.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastMesh.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastMesh.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastMesh.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastMesh.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastMeshDetail.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastMeshDetail.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastMeshDetail.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastMeshDetail.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastRasterization.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastRasterization.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastRasterization.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastRasterization.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Recast",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Recast/Include  -o CMakeFiles/Recast.dir/Source/RecastRegion.cpp.o -c /home/hhh/git/recastnavigation/Recast/Source/RecastRegion.cpp",
+  "file": "/home/hhh/git/recastnavigation/Recast/Source/RecastRegion.cpp",
+  "output": "Recast/CMakeFiles/Recast.dir/Source/RecastRegion.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/cc -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Contrib/fastlz/fastlz.c.o -c /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz/fastlz.c",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz/fastlz.c",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Contrib/fastlz/fastlz.c.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/ChunkyTriMesh.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/ChunkyTriMesh.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/ChunkyTriMesh.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/ChunkyTriMesh.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/ConvexVolumeTool.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/ConvexVolumeTool.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/ConvexVolumeTool.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/ConvexVolumeTool.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/CrowdTool.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/CrowdTool.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/CrowdTool.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/CrowdTool.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/Filelist.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/Filelist.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/Filelist.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/Filelist.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/InputGeom.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/InputGeom.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/InputGeom.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/InputGeom.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/MeshLoaderObj.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/MeshLoaderObj.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/MeshLoaderObj.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/MeshLoaderObj.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/NavMeshPruneTool.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/NavMeshPruneTool.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/NavMeshPruneTool.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/NavMeshPruneTool.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/NavMeshTesterTool.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/NavMeshTesterTool.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/NavMeshTesterTool.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/NavMeshTesterTool.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/OffMeshConnectionTool.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/OffMeshConnectionTool.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/OffMeshConnectionTool.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/OffMeshConnectionTool.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/PerfTimer.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/PerfTimer.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/PerfTimer.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/PerfTimer.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/Sample.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/Sample.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/Sample.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/Sample.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/SampleInterfaces.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/SampleInterfaces.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/SampleInterfaces.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/SampleInterfaces.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/Sample_Debug.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/Sample_Debug.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/Sample_Debug.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/Sample_Debug.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/Sample_SoloMesh.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/Sample_SoloMesh.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/Sample_SoloMesh.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/Sample_SoloMesh.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/Sample_TempObstacles.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/Sample_TempObstacles.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/Sample_TempObstacles.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/Sample_TempObstacles.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/Sample_TileMesh.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/Sample_TileMesh.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/Sample_TileMesh.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/Sample_TileMesh.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/TestCase.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/TestCase.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/TestCase.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/TestCase.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/ValueHistory.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/ValueHistory.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/ValueHistory.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/ValueHistory.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/imgui.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/imgui.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/imgui.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/imgui.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/imguiRenderGL.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/imguiRenderGL.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/imguiRenderGL.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/imguiRenderGL.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/RecastDemo",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/RecastDemo/../DebugUtils/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Detour/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourCrowd/Include -I/home/hhh/git/recastnavigation/RecastDemo/../DetourTileCache/Include -I/home/hhh/git/recastnavigation/RecastDemo/../Recast/Include -I/home/hhh/git/recastnavigation/RecastDemo/Include -I/home/hhh/git/recastnavigation/RecastDemo/Contrib/SDL/include -I/home/hhh/git/recastnavigation/DebugUtils/Include -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourTileCache/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib/fastlz -isystem /home/hhh/git/recastnavigation/RecastDemo/Contrib -isystem /usr/include/SDL2  -o CMakeFiles/RecastDemo.dir/Source/main.cpp.o -c /home/hhh/git/recastnavigation/RecastDemo/Source/main.cpp",
+  "file": "/home/hhh/git/recastnavigation/RecastDemo/Source/main.cpp",
+  "output": "RecastDemo/CMakeFiles/RecastDemo.dir/Source/main.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Tests",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Tests/../Detour/Include -I/home/hhh/git/recastnavigation/Tests/../Recast/Include -I/home/hhh/git/recastnavigation/Tests/./Contrib -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -std=gnu++17 -o CMakeFiles/Tests.dir/Detour/Tests_Detour.cpp.o -c /home/hhh/git/recastnavigation/Tests/Detour/Tests_Detour.cpp",
+  "file": "/home/hhh/git/recastnavigation/Tests/Detour/Tests_Detour.cpp",
+  "output": "Tests/CMakeFiles/Tests.dir/Detour/Tests_Detour.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Tests",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Tests/../Detour/Include -I/home/hhh/git/recastnavigation/Tests/../Recast/Include -I/home/hhh/git/recastnavigation/Tests/./Contrib -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -std=gnu++17 -o CMakeFiles/Tests.dir/Recast/Bench_rcVector.cpp.o -c /home/hhh/git/recastnavigation/Tests/Recast/Bench_rcVector.cpp",
+  "file": "/home/hhh/git/recastnavigation/Tests/Recast/Bench_rcVector.cpp",
+  "output": "Tests/CMakeFiles/Tests.dir/Recast/Bench_rcVector.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Tests",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Tests/../Detour/Include -I/home/hhh/git/recastnavigation/Tests/../Recast/Include -I/home/hhh/git/recastnavigation/Tests/./Contrib -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -std=gnu++17 -o CMakeFiles/Tests.dir/Recast/Tests_Alloc.cpp.o -c /home/hhh/git/recastnavigation/Tests/Recast/Tests_Alloc.cpp",
+  "file": "/home/hhh/git/recastnavigation/Tests/Recast/Tests_Alloc.cpp",
+  "output": "Tests/CMakeFiles/Tests.dir/Recast/Tests_Alloc.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Tests",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Tests/../Detour/Include -I/home/hhh/git/recastnavigation/Tests/../Recast/Include -I/home/hhh/git/recastnavigation/Tests/./Contrib -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -std=gnu++17 -o CMakeFiles/Tests.dir/Recast/Tests_Recast.cpp.o -c /home/hhh/git/recastnavigation/Tests/Recast/Tests_Recast.cpp",
+  "file": "/home/hhh/git/recastnavigation/Tests/Recast/Tests_Recast.cpp",
+  "output": "Tests/CMakeFiles/Tests.dir/Recast/Tests_Recast.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Tests",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Tests/../Detour/Include -I/home/hhh/git/recastnavigation/Tests/../Recast/Include -I/home/hhh/git/recastnavigation/Tests/./Contrib -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -std=gnu++17 -o CMakeFiles/Tests.dir/Recast/Tests_RecastFilter.cpp.o -c /home/hhh/git/recastnavigation/Tests/Recast/Tests_RecastFilter.cpp",
+  "file": "/home/hhh/git/recastnavigation/Tests/Recast/Tests_RecastFilter.cpp",
+  "output": "Tests/CMakeFiles/Tests.dir/Recast/Tests_RecastFilter.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Tests",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Tests/../Detour/Include -I/home/hhh/git/recastnavigation/Tests/../Recast/Include -I/home/hhh/git/recastnavigation/Tests/./Contrib -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -std=gnu++17 -o CMakeFiles/Tests.dir/DetourCrowd/Tests_DetourPathCorridor.cpp.o -c /home/hhh/git/recastnavigation/Tests/DetourCrowd/Tests_DetourPathCorridor.cpp",
+  "file": "/home/hhh/git/recastnavigation/Tests/DetourCrowd/Tests_DetourPathCorridor.cpp",
+  "output": "Tests/CMakeFiles/Tests.dir/DetourCrowd/Tests_DetourPathCorridor.cpp.o"
+},
+{
+  "directory": "/home/hhh/git/recastnavigation/Tests",
+  "command": "/usr/bin/c++ -DRC_DISABLE_ASSERTS -I/home/hhh/git/recastnavigation/Tests/../Detour/Include -I/home/hhh/git/recastnavigation/Tests/../Recast/Include -I/home/hhh/git/recastnavigation/Tests/./Contrib -I/home/hhh/git/recastnavigation/Recast/Include -I/home/hhh/git/recastnavigation/Detour/Include -I/home/hhh/git/recastnavigation/DetourCrowd/Include -std=gnu++17 -o CMakeFiles/Tests.dir/Contrib/catch2/catch_amalgamated.cpp.o -c /home/hhh/git/recastnavigation/Tests/Contrib/catch2/catch_amalgamated.cpp",
+  "file": "/home/hhh/git/recastnavigation/Tests/Contrib/catch2/catch_amalgamated.cpp",
+  "output": "Tests/CMakeFiles/Tests.dir/Contrib/catch2/catch_amalgamated.cpp.o"
+}
+]

@@ -38,32 +38,30 @@
 #include "CrowdTool.h"
 
 #ifdef WIN32
-#	define snprintf _snprintf
+#define snprintf _snprintf
 #endif
 
-
-Sample_SoloMesh::Sample_SoloMesh() :
-	m_keepInterResults(true),
-	m_totalBuildTimeMs(0),
-	m_triareas(0),
-	m_solid(0),
-	m_chf(0),
-	m_cset(0),
-	m_pmesh(0),
-	m_dmesh(0),
-	m_drawMode(DRAWMODE_NAVMESH)
+Sample_SoloMesh::Sample_SoloMesh() : m_keepInterResults(true),
+									 m_totalBuildTimeMs(0),
+									 m_triareas(0),
+									 m_solid(0),
+									 m_chf(0),
+									 m_cset(0),
+									 m_pmesh(0),
+									 m_dmesh(0),
+									 m_drawMode(DRAWMODE_NAVMESH)
 {
 	setTool(new NavMeshTesterTool);
 }
-		
+
 Sample_SoloMesh::~Sample_SoloMesh()
 {
 	cleanup();
 }
-	
+
 void Sample_SoloMesh::cleanup()
 {
-	delete [] m_triareas;
+	delete[] m_triareas;
 	m_triareas = 0;
 	rcFreeHeightField(m_solid);
 	m_solid = 0;
@@ -105,7 +103,7 @@ void Sample_SoloMesh::handleSettings()
 
 	imguiUnindent();
 	imguiUnindent();
-	
+
 	char msg[64];
 	snprintf(msg, 64, "Build Time: %.1fms", m_totalBuildTimeMs);
 	imguiLabel(msg);
@@ -116,7 +114,7 @@ void Sample_SoloMesh::handleSettings()
 void Sample_SoloMesh::handleTools()
 {
 	int type = !m_tool ? TOOL_NONE : m_tool->type();
-	
+
 	if (imguiCheck("Test Navmesh", type == TOOL_NAVMESH_TESTER))
 	{
 		setTool(new NavMeshTesterTool);
@@ -137,7 +135,7 @@ void Sample_SoloMesh::handleTools()
 	{
 		setTool(new CrowdTool);
 	}
-	
+
 	imguiSeparatorLine();
 
 	imguiIndent();
@@ -146,7 +144,6 @@ void Sample_SoloMesh::handleTools()
 		m_tool->handleMenu();
 
 	imguiUnindent();
-
 }
 
 void Sample_SoloMesh::handleDebugMode()
@@ -176,10 +173,11 @@ void Sample_SoloMesh::handleDebugMode()
 		valid[DRAWMODE_POLYMESH] = m_pmesh != 0;
 		valid[DRAWMODE_POLYMESH_DETAIL] = m_dmesh != 0;
 	}
-	
+
 	int unavail = 0;
 	for (int i = 0; i < MAX_DRAWMODE; ++i)
-		if (!valid[i]) unavail++;
+		if (!valid[i])
+			unavail++;
 
 	if (unavail == MAX_DRAWMODE)
 		return;
@@ -219,7 +217,7 @@ void Sample_SoloMesh::handleDebugMode()
 		m_drawMode = DRAWMODE_POLYMESH;
 	if (imguiCheck("Poly Mesh Detail", m_drawMode == DRAWMODE_POLYMESH_DETAIL, valid[DRAWMODE_POLYMESH_DETAIL]))
 		m_drawMode = DRAWMODE_POLYMESH_DETAIL;
-		
+
 	if (unavail)
 	{
 		imguiValue("Tick 'Keep Itermediate Results'");
@@ -231,12 +229,12 @@ void Sample_SoloMesh::handleRender()
 {
 	if (!m_geom || !m_geom->getMesh())
 		return;
-	
+
 	glEnable(GL_FOG);
 	glDepthMask(GL_TRUE);
 
 	const float texScale = 1.0f / (m_cellSize * 10.0f);
-	
+
 	if (m_drawMode != DRAWMODE_NAVMESH_TRANS)
 	{
 		// Draw mesh
@@ -245,24 +243,24 @@ void Sample_SoloMesh::handleRender()
 								m_agentMaxSlope, texScale);
 		m_geom->drawOffMeshConnections(&m_dd);
 	}
-	
+
 	glDisable(GL_FOG);
 	glDepthMask(GL_FALSE);
 
 	// Draw bounds
-	const float* bmin = m_geom->getNavMeshBoundsMin();
-	const float* bmax = m_geom->getNavMeshBoundsMax();
-	duDebugDrawBoxWire(&m_dd, bmin[0],bmin[1],bmin[2], bmax[0],bmax[1],bmax[2], duRGBA(255,255,255,128), 1.0f);
+	const float *bmin = m_geom->getNavMeshBoundsMin();
+	const float *bmax = m_geom->getNavMeshBoundsMax();
+	duDebugDrawBoxWire(&m_dd, bmin[0], bmin[1], bmin[2], bmax[0], bmax[1], bmax[2], duRGBA(255, 255, 255, 128), 1.0f);
 	m_dd.begin(DU_DRAW_POINTS, 5.0f);
-	m_dd.vertex(bmin[0],bmin[1],bmin[2],duRGBA(255,255,255,128));
+	m_dd.vertex(bmin[0], bmin[1], bmin[2], duRGBA(255, 255, 255, 128));
 	m_dd.end();
-	
+
 	if (m_navMesh && m_navQuery &&
 		(m_drawMode == DRAWMODE_NAVMESH ||
-		m_drawMode == DRAWMODE_NAVMESH_TRANS ||
-		m_drawMode == DRAWMODE_NAVMESH_BVTREE ||
+		 m_drawMode == DRAWMODE_NAVMESH_TRANS ||
+		 m_drawMode == DRAWMODE_NAVMESH_BVTREE ||
 		 m_drawMode == DRAWMODE_NAVMESH_NODES ||
-		m_drawMode == DRAWMODE_NAVMESH_INVIS))
+		 m_drawMode == DRAWMODE_NAVMESH_INVIS))
 	{
 		if (m_drawMode != DRAWMODE_NAVMESH_INVIS)
 			duDebugDrawNavMeshWithClosedList(&m_dd, *m_navMesh, *m_navQuery, m_navMeshDrawFlags);
@@ -270,11 +268,11 @@ void Sample_SoloMesh::handleRender()
 			duDebugDrawNavMeshBVTree(&m_dd, *m_navMesh);
 		if (m_drawMode == DRAWMODE_NAVMESH_NODES)
 			duDebugDrawNavMeshNodes(&m_dd, *m_navQuery);
-		duDebugDrawNavMeshPolysWithFlags(&m_dd, *m_navMesh, SAMPLE_POLYFLAGS_DISABLED, duRGBA(0,0,0,128));
+		duDebugDrawNavMeshPolysWithFlags(&m_dd, *m_navMesh, SAMPLE_POLYFLAGS_DISABLED, duRGBA(0, 0, 0, 128));
 	}
-		
+
 	glDepthMask(GL_TRUE);
-	
+
 	if (m_chf && m_drawMode == DRAWMODE_COMPACT)
 		duDebugDrawCompactHeightfieldSolid(&m_dd, *m_chf);
 
@@ -316,7 +314,7 @@ void Sample_SoloMesh::handleRender()
 	if (m_chf && m_cset && m_drawMode == DRAWMODE_REGION_CONNECTIONS)
 	{
 		duDebugDrawCompactHeightfieldRegions(&m_dd, *m_chf);
-			
+
 		glDepthMask(GL_FALSE);
 		duDebugDrawRegionConnections(&m_dd, *m_cset);
 		glDepthMask(GL_TRUE);
@@ -333,7 +331,7 @@ void Sample_SoloMesh::handleRender()
 		duDebugDrawPolyMeshDetail(&m_dd, *m_dmesh);
 		glDepthMask(GL_TRUE);
 	}
-	
+
 	m_geom->drawConvexVolumes(&m_dd);
 
 	if (m_tool)
@@ -343,14 +341,14 @@ void Sample_SoloMesh::handleRender()
 	glDepthMask(GL_TRUE);
 }
 
-void Sample_SoloMesh::handleRenderOverlay(double* proj, double* model, int* view)
+void Sample_SoloMesh::handleRenderOverlay(double *proj, double *model, int *view)
 {
 	if (m_tool)
 		m_tool->handleRenderOverlay(proj, model, view);
 	renderOverlayToolStates(proj, model, view);
 }
 
-void Sample_SoloMesh::handleMeshChanged(class InputGeom* geom)
+void Sample_SoloMesh::handleMeshChanged(class InputGeom *geom)
 {
 	Sample::handleMeshChanged(geom);
 
@@ -366,6 +364,164 @@ void Sample_SoloMesh::handleMeshChanged(class InputGeom* geom)
 	initToolStates(this);
 }
 
+void writeGeometryToJson(const float *verts, const int *tris, const int nverts, const int ntris, const std::string &filename)
+{
+	FILE *file = fopen(filename.c_str(), "w");
+	if (!file)
+	{
+		printf("Failed to open file for writing: %s\n", filename.c_str());
+		return;
+	}
+
+	fprintf(file, "{");
+	fprintf(file, "\"verts\":[");
+	for (int i = 0; i < nverts - 1; i++)
+	{
+		fprintf(file, "[%.6f, %.6f, %.6f],", verts[i * 3], verts[i * 3 + 1], verts[i * 3 + 2]);
+	}
+	fprintf(file, "[%.6f, %.6f, %.6f]", verts[(nverts - 1) * 3], verts[(nverts - 1) * 3 + 1], verts[(nverts - 1) * 3 + 2]);
+	fprintf(file, "],");
+	fprintf(file, "\"tris\":[");
+	for (int i = 0; i < ntris - 1; i++)
+	{
+		fprintf(file, "[%d, %d, %d],", tris[i * 3], tris[i * 3 + 1], tris[i * 3 + 2]);
+	}
+	fprintf(file, "[%d, %d, %d]", tris[(ntris - 1) * 3], tris[(ntris - 1) * 3 + 1], tris[(ntris - 1) * 3 + 2]);
+	fprintf(file, "]");
+	fprintf(file, "}");
+
+	fclose(file);
+}
+
+void writeHeightfieldToJson(const rcHeightfield &heightfield, const std::string &filename)
+{
+	FILE *file = fopen(filename.c_str(), "w");
+	if (!file)
+	{
+		printf("Failed to open file for writing: %s\n", filename.c_str());
+		return;
+	}
+
+	fprintf(file, "{");
+	fprintf(file, "\"width\": %d,", heightfield.width);
+	fprintf(file, "\"height\": %d,", heightfield.height);
+	fprintf(file, "\"bmin\": [%.6f, %.6f, %.6f],", heightfield.bmin[0], heightfield.bmin[1], heightfield.bmin[2]);
+	fprintf(file, "\"bmax\": [%.6f, %.6f, %.6f],", heightfield.bmax[0], heightfield.bmax[1], heightfield.bmax[2]);
+	fprintf(file, "\"cs\": %.6f,", heightfield.cs);
+	fprintf(file, "\"ch\": %.6f,", heightfield.ch);
+	fprintf(file, "\"spans\":[");
+	for (int column_index = 0; column_index < heightfield.width * heightfield.height; ++column_index)
+	{
+		fprintf(file, "{");
+		rcSpan *span = heightfield.spans[column_index];
+		int closing_count = 0;
+		while (span)
+		{
+			fprintf(file, "\"min\": %d,", span->smin);
+			fprintf(file, "\"max\": %d,", span->smax);
+			fprintf(file, "\"area\": %d,", span->area);
+			fprintf(file, "\"next\": {");
+			span = span->next;
+			closing_count++;
+		}
+		for (int i = 0; i < closing_count; i++)
+		{
+			fprintf(file, "}");
+		}
+		if (column_index < heightfield.width * heightfield.height - 1)
+		{
+			fprintf(file, "},");
+		}
+		else
+		{
+			fprintf(file, "}");
+		}
+	}
+
+	fprintf(file, "]");
+	fprintf(file, "}");
+
+	fclose(file);
+}
+
+void writeCompactHeightfieldToJson(const rcCompactHeightfield &chf, const std::string &filename, bool dists = true)
+{
+	FILE *file = fopen(filename.c_str(), "w");
+	if (!file)
+	{
+		printf("Failed to open file for writing: %s\n", filename.c_str());
+		return;
+	}
+
+	fprintf(file, "{");
+	fprintf(file, "\"width\": %d,", chf.width);
+	fprintf(file, "\"height\": %d,", chf.height);
+	fprintf(file, "\"walkableHeight\": %d,", chf.walkableHeight);
+	fprintf(file, "\"walkableClimb\": %d,", chf.walkableClimb);
+	fprintf(file, "\"borderSize\": %d,", chf.borderSize);
+	fprintf(file, "\"maxDistance\": %d,", chf.maxDistance);
+	fprintf(file, "\"maxRegions\": %d,", chf.maxRegions);
+	fprintf(file, "\"bmin\": [%.6f, %.6f, %.6f],", chf.bmin[0], chf.bmin[1], chf.bmin[2]);
+	fprintf(file, "\"bmax\": [%.6f, %.6f, %.6f],", chf.bmax[0], chf.bmax[1], chf.bmax[2]);
+	fprintf(file, "\"cs\": %.6f,", chf.cs);
+	fprintf(file, "\"ch\": %.6f,", chf.ch);
+	fprintf(file, "\"cells\":[");
+	for (int i = 0; i < chf.width * chf.height; i++)
+	{
+		fprintf(file, "{");
+		fprintf(file, "\"index\": %d,", chf.cells[i].index);
+		fprintf(file, "\"count\": %d", chf.cells[i].count);
+		fprintf(file, "}");
+		if (i < chf.width * chf.height - 1)
+		{
+			fprintf(file, ",");
+		}
+	}
+	fprintf(file, "],");
+	fprintf(file, "\"spans\":[");
+	for (int i = 0; i < chf.spanCount; i++)
+	{
+		fprintf(file, "{");
+		fprintf(file, "\"y\": %d,", chf.spans[i].y);
+		fprintf(file, "\"reg\": %d,", chf.spans[i].reg);
+		fprintf(file, "\"con\": %d,", chf.spans[i].con);
+		fprintf(file, "\"h\": %d", chf.spans[i].h);
+		fprintf(file, "}");
+		if (i < chf.spanCount - 1)
+		{
+			fprintf(file, ",");
+		}
+	}
+	fprintf(file, "],");
+
+	fprintf(file, "\"dist\":[");
+	if (dists)
+	{
+		for (int i = 0; i < chf.spanCount; i++)
+		{
+			fprintf(file, "%d", chf.dist[i]);
+			if (i < chf.spanCount - 1)
+			{
+				fprintf(file, ",");
+			}
+		}
+	}
+	fprintf(file, "],");
+	fprintf(file, "\"areas\":[");
+	for (int i = 0; i < chf.spanCount; i++)
+	{
+		fprintf(file, "%d", (int)chf.areas[i]);
+		if (i < chf.spanCount - 1)
+		{
+			fprintf(file, ",");
+		}
+	}
+	fprintf(file, "]");
+
+	fprintf(file, "}");
+
+	fclose(file);
+}
 
 bool Sample_SoloMesh::handleBuild()
 {
@@ -374,36 +530,49 @@ bool Sample_SoloMesh::handleBuild()
 		m_ctx->log(RC_LOG_ERROR, "buildNavigation: Input mesh is not specified.");
 		return false;
 	}
-	
+
 	cleanup();
-	
-	const float* bmin = m_geom->getNavMeshBoundsMin();
-	const float* bmax = m_geom->getNavMeshBoundsMax();
-	const float* verts = m_geom->getMesh()->getVerts();
+
+	const float *bmin = m_geom->getNavMeshBoundsMin();
+	const float *bmax = m_geom->getNavMeshBoundsMax();
+	const float *verts = m_geom->getMesh()->getVerts();
 	const int nverts = m_geom->getMesh()->getVertCount();
-	const int* tris = m_geom->getMesh()->getTris();
+	const int *tris = m_geom->getMesh()->getTris();
 	const int ntris = m_geom->getMesh()->getTriCount();
-	
+
 	//
 	// Step 1. Initialize build config.
 	//
-	
+
 	// Init build configuration from GUI
 	memset(&m_cfg, 0, sizeof(m_cfg));
 	m_cfg.cs = m_cellSize;
 	m_cfg.ch = m_cellHeight;
 	m_cfg.walkableSlopeAngle = m_agentMaxSlope;
+	printf("walkableSlopeAngle: %f\n", m_cfg.walkableSlopeAngle);
 	m_cfg.walkableHeight = (int)ceilf(m_agentHeight / m_cfg.ch);
+	printf("walkableHeight: %d\n", m_cfg.walkableHeight);
 	m_cfg.walkableClimb = (int)floorf(m_agentMaxClimb / m_cfg.ch);
+	printf("walkableClimb: %d\n", m_cfg.walkableClimb);
 	m_cfg.walkableRadius = (int)ceilf(m_agentRadius / m_cfg.cs);
+	printf("walkableRadius: %d\n", m_cfg.walkableRadius);
 	m_cfg.maxEdgeLen = (int)(m_edgeMaxLen / m_cellSize);
+	printf("maxEdgeLen: %d\n", m_cfg.maxEdgeLen);
 	m_cfg.maxSimplificationError = m_edgeMaxError;
-	m_cfg.minRegionArea = (int)rcSqr(m_regionMinSize);		// Note: area = size*size
-	m_cfg.mergeRegionArea = (int)rcSqr(m_regionMergeSize);	// Note: area = size*size
+	printf("maxSimplificationError: %f\n", m_cfg.maxSimplificationError);
+	m_cfg.minRegionArea = (int)rcSqr(m_regionMinSize); // Note: area = size*size
+	printf("minRegionArea: %d\n", m_cfg.minRegionArea);
+	m_cfg.mergeRegionArea = (int)rcSqr(m_regionMergeSize); // Note: area = size*size
+	printf("mergeRegionArea: %d\n", m_cfg.mergeRegionArea);
 	m_cfg.maxVertsPerPoly = (int)m_vertsPerPoly;
+	printf("maxVertsPerPoly: %d\n", m_cfg.maxVertsPerPoly);
 	m_cfg.detailSampleDist = m_detailSampleDist < 0.9f ? 0 : m_cellSize * m_detailSampleDist;
+	printf("detailSampleDist: %f\n", m_cfg.detailSampleDist);
 	m_cfg.detailSampleMaxError = m_cellHeight * m_detailSampleMaxError;
-	
+	printf("detailSampleMaxError: %f\n", m_cfg.detailSampleMaxError);
+	m_cfg.borderSize = m_cfg.walkableRadius + 3; // Reserve enough padding.
+	printf("borderSize: %d\n", m_cfg.borderSize);
+
 	// Set the area where the navigation will be build.
 	// Here the bounds of the input mesh are used, but the
 	// area could be specified by an user defined box, etc.
@@ -414,17 +583,17 @@ bool Sample_SoloMesh::handleBuild()
 	// Reset build times gathering.
 	m_ctx->resetTimers();
 
-	// Start the build process.	
+	// Start the build process.
 	m_ctx->startTimer(RC_TIMER_TOTAL);
-	
+
 	m_ctx->log(RC_LOG_PROGRESS, "Building navigation:");
 	m_ctx->log(RC_LOG_PROGRESS, " - %d x %d cells", m_cfg.width, m_cfg.height);
-	m_ctx->log(RC_LOG_PROGRESS, " - %.1fK verts, %.1fK tris", nverts/1000.0f, ntris/1000.0f);
-	
+	m_ctx->log(RC_LOG_PROGRESS, " - %.1fK verts, %.1fK tris", nverts / 1000.0f, ntris / 1000.0f);
+
 	//
 	// Step 2. Rasterize input polygon soup.
-	//
-	
+	// walkableHeight
+
 	// Allocate voxel heightfield where we rasterize our input data to.
 	m_solid = rcAllocHeightfield();
 	if (!m_solid)
@@ -437,7 +606,7 @@ bool Sample_SoloMesh::handleBuild()
 		m_ctx->log(RC_LOG_ERROR, "buildNavigation: Could not create solid heightfield.");
 		return false;
 	}
-	
+
 	// Allocate array that can hold triangle area types.
 	// If you have multiple meshes you need to process, allocate
 	// and array which can hold the max number of triangles you need to process.
@@ -447,11 +616,13 @@ bool Sample_SoloMesh::handleBuild()
 		m_ctx->log(RC_LOG_ERROR, "buildNavigation: Out of memory 'm_triareas' (%d).", ntris);
 		return false;
 	}
-	
+
+	writeGeometryToJson(verts, tris, nverts, ntris, "geometry.json");
+
 	// Find triangles which are walkable based on their slope and rasterize them.
 	// If your input data is multiple meshes, you can transform them here, calculate
 	// the are type for each of the meshes and rasterize them.
-	memset(m_triareas, 0, ntris*sizeof(unsigned char));
+	memset(m_triareas, 0, ntris * sizeof(unsigned char));
 	rcMarkWalkableTriangles(m_ctx, m_cfg.walkableSlopeAngle, verts, nverts, tris, ntris, m_triareas);
 	if (!rcRasterizeTriangles(m_ctx, verts, nverts, tris, m_triareas, ntris, *m_solid, m_cfg.walkableClimb))
 	{
@@ -461,14 +632,15 @@ bool Sample_SoloMesh::handleBuild()
 
 	if (!m_keepInterResults)
 	{
-		delete [] m_triareas;
+		delete[] m_triareas;
 		m_triareas = 0;
 	}
-	
+	writeHeightfieldToJson(*m_solid, "heightfield_initial.json");
+
 	//
 	// Step 3. Filter walkable surfaces.
 	//
-	
+
 	// Once all geometry is rasterized, we do initial pass of filtering to
 	// remove unwanted overhangs caused by the conservative rasterization
 	// as well as filter spans where the character cannot possibly stand.
@@ -479,7 +651,7 @@ bool Sample_SoloMesh::handleBuild()
 	if (m_filterWalkableLowHeightSpans)
 		rcFilterWalkableLowHeightSpans(m_ctx, m_cfg.walkableHeight, *m_solid);
 
-
+	writeHeightfieldToJson(*m_solid, "heightfield_filtered.json");
 	//
 	// Step 4. Partition walkable surface to simple regions.
 	//
@@ -498,26 +670,28 @@ bool Sample_SoloMesh::handleBuild()
 		m_ctx->log(RC_LOG_ERROR, "buildNavigation: Could not build compact data.");
 		return false;
 	}
-	
+
 	if (!m_keepInterResults)
 	{
 		rcFreeHeightField(m_solid);
 		m_solid = 0;
 	}
-		
+
+	writeCompactHeightfieldToJson(*m_chf, "compact_heightfield_initial.json", false);
+
 	// Erode the walkable area by agent radius.
 	if (!rcErodeWalkableArea(m_ctx, m_cfg.walkableRadius, *m_chf))
 	{
 		m_ctx->log(RC_LOG_ERROR, "buildNavigation: Could not erode.");
 		return false;
 	}
+	writeCompactHeightfieldToJson(*m_chf, "compact_heightfield_eroded.json", false);
 
 	// (Optional) Mark areas.
-	const ConvexVolume* vols = m_geom->getConvexVolumes();
-	for (int i  = 0; i < m_geom->getConvexVolumeCount(); ++i)
+	const ConvexVolume *vols = m_geom->getConvexVolumes();
+	for (int i = 0; i < m_geom->getConvexVolumeCount(); ++i)
 		rcMarkConvexPolyArea(m_ctx, vols[i].verts, vols[i].nverts, vols[i].hmin, vols[i].hmax, (unsigned char)vols[i].area, *m_chf);
 
-	
 	// Partition the heightfield so that we can use simple algorithm later to triangulate the walkable areas.
 	// There are 3 partitioning methods, each with some pros and cons:
 	// 1) Watershed partitioning
@@ -543,7 +717,7 @@ bool Sample_SoloMesh::handleBuild()
 	//   - can be slow and create a bit ugly tessellation (still better than monotone)
 	//     if you have large open areas with small obstacles (not a problem if you use tiles)
 	//   * good choice to use for tiled navmesh with medium and small sized tiles
-	
+
 	if (m_partitionType == SAMPLE_PARTITION_WATERSHED)
 	{
 		// Prepare for region partitioning, by calculating distance field along the walkable surface.
@@ -552,13 +726,16 @@ bool Sample_SoloMesh::handleBuild()
 			m_ctx->log(RC_LOG_ERROR, "buildNavigation: Could not build distance field.");
 			return false;
 		}
-		
+
+		writeCompactHeightfieldToJson(*m_chf, "compact_heightfield_distance_field.json");
+
 		// Partition the walkable surface into simple regions without holes.
-		if (!rcBuildRegions(m_ctx, *m_chf, 0, m_cfg.minRegionArea, m_cfg.mergeRegionArea))
+		if (!rcBuildRegions(m_ctx, *m_chf, m_cfg.borderSize, m_cfg.minRegionArea, m_cfg.mergeRegionArea))
 		{
 			m_ctx->log(RC_LOG_ERROR, "buildNavigation: Could not build watershed regions.");
 			return false;
 		}
+		writeCompactHeightfieldToJson(*m_chf, "compact_heightfield_regions.json");
 	}
 	else if (m_partitionType == SAMPLE_PARTITION_MONOTONE)
 	{
@@ -579,11 +756,11 @@ bool Sample_SoloMesh::handleBuild()
 			return false;
 		}
 	}
-	
+
 	//
 	// Step 5. Trace and simplify region contours.
 	//
-	
+
 	// Create contours.
 	m_cset = rcAllocContourSet();
 	if (!m_cset)
@@ -596,11 +773,11 @@ bool Sample_SoloMesh::handleBuild()
 		m_ctx->log(RC_LOG_ERROR, "buildNavigation: Could not create contours.");
 		return false;
 	}
-	
+
 	//
 	// Step 6. Build polygons mesh from contours.
 	//
-	
+
 	// Build polygon navmesh from the contours.
 	m_pmesh = rcAllocPolyMesh();
 	if (!m_pmesh)
@@ -613,11 +790,11 @@ bool Sample_SoloMesh::handleBuild()
 		m_ctx->log(RC_LOG_ERROR, "buildNavigation: Could not triangulate contours.");
 		return false;
 	}
-	
+
 	//
 	// Step 7. Create detail mesh which allows to access approximate height on each polygon.
 	//
-	
+
 	m_dmesh = rcAllocPolyMeshDetail();
 	if (!m_dmesh)
 	{
@@ -641,16 +818,16 @@ bool Sample_SoloMesh::handleBuild()
 
 	// At this point the navigation mesh data is ready, you can access it from m_pmesh.
 	// See duDebugDrawPolyMesh or dtCreateNavMeshData as examples how to access the data.
-	
+
 	//
 	// (Optional) Step 8. Create Detour data from Recast poly mesh.
 	//
-	
+
 	// The GUI may allow more max points per polygon than Detour can handle.
 	// Only build the detour navmesh if we do not exceed the limit.
 	if (m_cfg.maxVertsPerPoly <= DT_VERTS_PER_POLYGON)
 	{
-		unsigned char* navData = 0;
+		unsigned char *navData = 0;
 		int navDataSize = 0;
 
 		// Update poly flags from areas.
@@ -658,7 +835,7 @@ bool Sample_SoloMesh::handleBuild()
 		{
 			if (m_pmesh->areas[i] == RC_WALKABLE_AREA)
 				m_pmesh->areas[i] = SAMPLE_POLYAREA_GROUND;
-				
+
 			if (m_pmesh->areas[i] == SAMPLE_POLYAREA_GROUND ||
 				m_pmesh->areas[i] == SAMPLE_POLYAREA_GRASS ||
 				m_pmesh->areas[i] == SAMPLE_POLYAREA_ROAD)
@@ -674,7 +851,6 @@ bool Sample_SoloMesh::handleBuild()
 				m_pmesh->flags[i] = SAMPLE_POLYFLAGS_WALK | SAMPLE_POLYFLAGS_DOOR;
 			}
 		}
-
 
 		dtNavMeshCreateParams params;
 		memset(&params, 0, sizeof(params));
@@ -705,13 +881,13 @@ bool Sample_SoloMesh::handleBuild()
 		params.cs = m_cfg.cs;
 		params.ch = m_cfg.ch;
 		params.buildBvTree = true;
-		
+
 		if (!dtCreateNavMeshData(&params, &navData, &navDataSize))
 		{
 			m_ctx->log(RC_LOG_ERROR, "Could not build Detour navmesh.");
 			return false;
 		}
-		
+
 		m_navMesh = dtAllocNavMesh();
 		if (!m_navMesh)
 		{
@@ -719,9 +895,9 @@ bool Sample_SoloMesh::handleBuild()
 			m_ctx->log(RC_LOG_ERROR, "Could not create Detour navmesh");
 			return false;
 		}
-		
+
 		dtStatus status;
-		
+
 		status = m_navMesh->init(navData, navDataSize, DT_TILE_FREE_DATA);
 		if (dtStatusFailed(status))
 		{
@@ -729,7 +905,7 @@ bool Sample_SoloMesh::handleBuild()
 			m_ctx->log(RC_LOG_ERROR, "Could not init Detour navmesh");
 			return false;
 		}
-		
+
 		status = m_navQuery->init(m_navMesh, 2048);
 		if (dtStatusFailed(status))
 		{
@@ -737,15 +913,15 @@ bool Sample_SoloMesh::handleBuild()
 			return false;
 		}
 	}
-	
+
 	m_ctx->stopTimer(RC_TIMER_TOTAL);
 
 	// Show performance stats.
 	duLogBuildTimes(*m_ctx, m_ctx->getAccumulatedTime(RC_TIMER_TOTAL));
 	m_ctx->log(RC_LOG_PROGRESS, ">> Polymesh: %d vertices  %d polygons", m_pmesh->nverts, m_pmesh->npolys);
-	
-	m_totalBuildTimeMs = m_ctx->getAccumulatedTime(RC_TIMER_TOTAL)/1000.0f;
-	
+
+	m_totalBuildTimeMs = m_ctx->getAccumulatedTime(RC_TIMER_TOTAL) / 1000.0f;
+
 	if (m_tool)
 		m_tool->init(this);
 	initToolStates(this);

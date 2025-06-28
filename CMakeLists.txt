@@ -5,6 +5,7 @@ project(RecastNavigation)
 # lib versions
 SET(SOVERSION 1)
 set(LIB_VERSION 1.6.0)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 string(REPLACE "." "," LIB_VERSION_NUM "${LIB_VERSION}.0")
 
 set_property(GLOBAL PROPERTY CXX_STANDARD 98)
